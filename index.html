@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">      
+	
+	<meta name="description" content=" ">
+	<meta name="keywords" content=" ">
+	<title>repeat-layout-surfing</title>
+	<!--  Font онлайн -->
+	
+	<!--  Font офлайн -->
+	
+	 <!-- form-->
+	<link rel="stylesheet" href="build/css/style.css">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">	
+	<!-- Stroke Gap Icons скачанные иконки-->
+    <link rel="stylesheet" href="css/stroke-gap-icons.css">
+    <!-- <link rel="stylesheet" href="src/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header"> 
+			<div class="container">
+				<div class="header__body">
+					<a href="#" class="header__logo">
+						<!-- <img src="img/logo.jpg" alt=""> -->
+						<span class="header__colortext"> Photo</span>Cage app
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<!-- для бургера? -->
+					<p>привет</p>
+				
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li> <!-- <img class="icon" src="src/images/menu icons/home.svg"alt="home"/>  -->
+							<svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="18" viewBox="0 0 19 18">
+  								<image  width="19" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAYAAAC5DOVpAAABAklEQVQ4jc3UPUrEQBiH8d9KWPAA1lbbWFlZCYKgrCgGxUvYeRorCysRBEEQBCsLW8EDWHkDQRDyARJMYJjZZJetfKrJ+/7zMMl8jPI8twBbeEcxFF1JKilTvOABq0k3IKvrOikGTFvJuB3f4xQ/SXKOLBTFtXyWMKuqKrHgsJ3FOOmwh0ccxcKsLMs4fIy7HlHH7ixhLFtEFAqfcNAJQ9kJbhcUdeyEwqwoimVFofAZ+41srZ3yNbaxkcSHucE3zkaTySRMXuJ88NWUdXw21e4z+3jFRdDbxFVPdq7sC2/B8/BxmrHPluYfy3rO5nKy6NZoljj84R9RvtlPYb/hbwXxC6SuVXwf6U6OAAAAAElFTkSuQmCC"/>
+							</svg>
+							<br>
+							<a href="#" class="header__link">Home</a></li>
+
+							<li><!-- <img class="icon" src="src/images/menu icons/gallery.svg"alt="gallery"> -->
+								<svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="15" viewBox="0 0 22 15">
+ 									 <image width="22" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAPCAYAAADgbT9oAAABX0lEQVQ4ja3TMWhTURgF4O+RUCKYUSjpVFB0UQSJkC6CU4VCoAgWRXHVPeDk1sXVqVAodOjkJA5CwUlaWigdBEEMCAUnJ0EISQyWW/4Hz+ZBE+2Bx333f+eee/5z78va7bbAM7xGJeZvsIKRf0B1NBrtoFWy9D5+j1Unw251OByWif4vWkk419jCk0Lrj7FZssFPrOIjeriFDq4WSdXBYJC/907l2RuT5BPu4TtuYiYMpWcDD3Ji1mw2/4wtL0fa9AaO8A53gvUNSzF+xdyJ436/X6pSgl18xqsQ3Y44XmAdC+G8czqKs9CN77nTR/iBeTyNWs6ZyvFsjF9wO5x+wGLEUOTIGo3GpBmnw7wSB7aHS1FPLS/jPQ5xfVrHF7CG9KteixtwEW+ji5e56Injer0+qeMc+3iOg5jPxYE+LJKyWq02rXCOFM2vQiR/IatUKimLlNt5YpDhLi6fqyzdY4GDVz0ej6hOAAAAAElFTkSuQmCC"/>
+								</svg>
+
+								<br>
+								<a href="#" class="header__link">Gallery</a></li>
+
+							<li><!-- <img class="icon" src="src/images/menu icons/members.svg"alt="members"> -->
+								<svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="17" viewBox="0 0 27 17">
+  									<image id="Layer_4_copy" data-name="Layer 4 copy" width="27" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAARCAYAAAAsT9czAAACDElEQVQ4jZWUP4gTQRSHv81mFWOI4eACsiJBLlUkCBaiCAFDwoKtweoK/xQWCmppeVirh5baeJ3aCstCikAs7rAKhhRRL6QKFtroiZkdIpOsspvZ5JIPBjbv93vz3uy8jTEej4nDcRwHeAiUA7kJPHFd142xL0VssVqt9hK4pQlTXnmed1uLLoFWrFKp3AWeH5J6r9FovNCihxApVi6XjwHfgPTiNH4CuWaz+VtTFpAMS1LKy0sUIvCou5zcn+M4Z4EHwLVAfwc8dV33UzgpEf7h+/667/ssudZUTrVaPSel9KSUN6WUmWCpZ09p4f0jJxNC7GtnmM9+0OA2cDLGpWLboWmO3lmpVDKBr8BpLTXKADiTyWQKwEfguOaY8gu40Gq1OtprbLfbUghRF0KMhBDMWUqrB96MEGI8x0eg/W8kOdtKt9vdKxQKW8Bjrc8pW71eb089jUajLvBjwVAprRv7GvP5/AbwDLiqpUV5D9zv9/ufi8ViHdgBjs54/gCbnU7nrXYy27bPAx6wpm2to5q5aNt2LZVK7QIfgCszLhXbDQcmJ8vlcqpQAzihbbsA0zQPLMv6Dpya4/oCPBoMBm8mxbLZ7BFATcuGZl2AaZokk9qVx3EA3BkOhztGOp3eBF7HmOZiGMayhf6hPoFLSSnl9VWyFIlEYjLaK6DG/4ZhWZb6411ftdjKQP8v7H0AyNug644AAAAASUVORK5CYII="/>
+								</svg>
+								<br>
+								<a href="#" class="header__link">Members</a>
+							</li>
+							<li><!-- <img class="icon" src="src/images/menu icons/Logout.svg"alt="Logout"> -->
+							<svg  class="icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="20" viewBox="0 0 17 20">
+  								<image width="17" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAB0klEQVQ4jYWTP0hcQRDGf2/Pe3DgYRE8BcE0gnByKa0SAgfaKF4jBAKC1wQMiJAqwU4MqRJSBAIhNoHIVQkKImglBEWrtAFBCAiCICmEA+9uDKOz8nh/zg+WHXZnvvlmZzao1Wp0wXNgFHgLXGW59YhI4tBQAL7a/hv4mfDwJJ1OJ3FoCI2AyJ6Knna7nRY8A+zGzh8Df4DzhJIYyTywCqi8RzHfKWAH+AK8AZppJK+Bd2b/TZNtZS0BFUA7cnlD0mq1sAtPcAIsJsJvFVRMURXYACZVtZIMWgmKY+AJcAb0xUiUfBr4bq2vWvlrSrIA9Jpj3Qi6oW6PPAy88iQTFnAA/OoS7KFD9wH4CJSVTElG7XIv4Z6NaLKKkvjam7GQjq2c7VFcROxQSfQNhoCRmKO2b8U6Eh+8csQ+DUqlkn9tZX/oe38PvgFzpv5BLgzDaxF5JiIFERkQkU39lF1WVUTe2/0PEWkExWJRcx4C45ZcB+1ThhAtbdvK1y6N6WwFhcLNB9X32Af6zXnLJvTIytQEs8CLyI9+CXxWI8jn8z6Ltlpr9YqyoKSqdv3OwTkXXTnn3LJz7p9z7jplNZxz/bEYgox0OhtPI23X7DrRpwlP4D974aWl3sY7bQAAAABJRU5ErkJggg=="/>
+							</svg>							
+							<br>
+								<a href="#" class="header__link">Logout</a>
+							</li>
+
+							
+						</ul>
+					</nav> 
+				</div>
+			</div>
+		</header>
+	<!--//header-->
+	
+	</div>
+	<!-- //wrapper -->
+		<!-- main -->		
+		<main class="main">	
+			<section class="section">
+				<div class="box">
+					
+					<h1 class="title">Please select an image from your computer </h1>	
+					 <form class="form" name="test" method="post" action="input1.php">	
+						<div class="search">
+	   						<input class="browse" type="submit" name="Submit" value="Browse">
+	  					</div>
+	  					<p >
+	  						<input class="Submit" type="submit" name="Submit" value="Upload image">
+	   					</p>
+	   				</form>
+
+
+				</div>
+			</section>
+			<section class="section">
+				<!-- <div class="box"> -->
+					<div class="images">
+						<div class="pic">
+							<img class="picture" src="src/images/column.jpg" alt="column">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset" title=""class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook "><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset "><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/statue.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook"><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset"><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/girl and lake.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook "><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/leaves.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook"><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset"><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/nature.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook "><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset"><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter"><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/sky.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook"><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset "><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/girl.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook "><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset"><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter"><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/evening.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook "><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset"><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/water.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook"><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset "><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter"><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/butterfly.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share"data-title="share in instgram ">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook "><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset "><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/woodpecker.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share"data-title="share in instgram ">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook"><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset"><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in twitter "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+						<div class="pic">
+							<img class="picture"src="src/images/rosa.jpg" alt="">
+							<div  class="date">
+								<p>10/08/ 2010</p>
+							</div>
+							<div class="text">
+								<p>Lorem Ipsum is simply </p>
+								<p class="star"><img src="src/images/social-network/star.svg"alt="star"></p>
+							</div>
+							<!-- <div class="bord"></div> -->
+							<hr color="#ccc">
+							<div class="social-network">
+								<p class="Share">Share</p>
+								<p class="socset"data-title="share in instgram "><img src="src/images/social-network/instgram.svg"alt="socset"class="center-img"></p>
+								
+								<p class="socset"data-title="share in facebook "><img src="src/images/social-network/Facebook.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset"><img src="src/images/social-network/socset.svg"alt="socset"class="center-img"></p>
+
+								<p class="socset"data-title="share in socset "><img src="src/images/social-network/twitter.svg"alt="socset"class="center-img"></p>
+								
+							</div>
+						</div>
+
+					</div>
+				<!-- </div> -->
+			</section>
+		</main>	
+		<!-- //main -->
+
+
+		<footer  class="footer" id="footer">
+			
+			<div class="container">
+				<p>© 2013 Photocage app  powered by cssauthor.com</p>
+			</div>	
+		</footer>
+
+	
+	
+	
+	<!-- jQuery download скачанный-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- jQuery CDN подключение с интернета-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- https://youtu.be/HB-Dj5qAo5k?list=PLVfMKQXDAhGVcNuWQrw8w2ZINnfSZCUkt&t=518  -подключение jquery -->
+   <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+	<!-- Main Scrypt File -->
+	<script src="build/js/script.js"></script>
+	<!-- <script src="js/go_top.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script> -->
+	
+	<!-- plugins -->
+	<script src="plugins/jquery-maskedinput/jquery.maskedinput.js"></script>
+	
+   
+</body>
+
+</html>

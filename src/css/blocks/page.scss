@@ -1,0 +1,133 @@
+// в base прописал
+// .main {
+
+// 	padding: 165px 0px 0px 0px;
+// }
+// #user{
+// 	width: 500px;
+// }
+.box {
+	margin-left: 160px;
+	margin-bottom: 65px;	
+}
+.title {
+
+	font-family: helvetica;
+	font-size: 27px;
+	color: #666;
+	font-weight:  normal;
+	margin-bottom: 35px;
+	// text-align: left;
+	// position: absolute;
+	// left: 305.937px;
+	// top: 180.392px;
+	
+}
+.form {
+	display: flex;
+
+	
+
+}
+.search {
+	// display: inline-block;
+	position: relative;
+	margin-right: 15px;
+	border:1px solid  #cccccc ;
+	border-radius: 8px;
+	max-width: 455px;
+    height: 52px;
+   	box-shadow: 0px 3px 4px 0px inset #cccccc; /* Параметры тени рамки */
+	
+	// position: absolute;
+	// left: 305.937px;
+	// top: 180.392px;
+	// position: relative;
+
+}
+
+.browse {
+	width: 93px;
+    height: 32px;
+    border: 1px solid;
+	border-radius: 5px;
+	background-color:#C1BFBF;
+	// position: fixed;
+	// display: block;
+	// left: 350px;
+	// box-shadow:none;
+	font-size: 18px;
+	font-family: "HelveticaNeueLTCom";
+	color: #fff;
+	text-align: center;
+	margin: 9px  10px 0 350px; 
+}
+// с фотошопа
+// .Browse_ {
+//   font-size: 18px;
+//   font-family: "HelveticaNeueLT";
+//   color: rgb(255, 255, 255);
+//   line-height: 1.278;
+//   text-align: left;
+//   position: absolute;
+//   left: 665.844px;
+//   top: 222.998px;
+//   z-index: 238;
+// }
+
+
+
+.Submit{
+	// display: inline-block;
+
+	width: 210px;
+	height: 45px;
+	background: #ff9900;
+	border: 1px #ccc solid;
+	border-radius: 5px;
+	// margin: 9px auto;
+	font-family: helvetica;
+	font-size: 24px;
+	color: #fff;
+
+	// text-align: center;
+
+}
+
+@media (max-width: 960px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        // margin:0 100px 0 0; 
+    }
+    .Submit {
+    	margin: 15px 0 0 0;
+    	width: 160px;
+    	font-size: 16px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+	.box {
+		margin-left: 70px;
+
+		// margin-bottom: 65px;	
+	}
+	.title {
+		font-size: 24px;
+	}
+
+}
+
+@media (max-width: 630px) {
+    .browse {
+        margin: 10px auto;
+        width: 73px;
+        font-size: 16px;
+    }
+    
+}
+
+

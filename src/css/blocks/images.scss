@@ -1,0 +1,134 @@
+// в base.scss прописал
+// .section {
+// 	max-width: 1000px;
+// }
+.images {
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+}
+
+.pic {
+	border:1px solid #cccccc ;
+	box-shadow: 0px 0px 3px 1px  #cccccc;
+	// box-shadow: 0px -3px 4px 0px inset #cccccc;
+	// background: linear-gradient(to bottom,#fff 98%,#cccccc 2%);
+	margin: 0px 0px 30px 35px;
+	position: relative;
+
+	// z-index: 1;
+}
+
+img.picture {
+	padding:5px; 
+	
+}
+
+.date {
+	position: absolute;
+	top:175px;
+	left: 10px;
+	// z-index: 22;
+	font-size: 19px;
+	color: #fff;
+	// line-height: 1.211;
+ //  	text-align: left;
+}
+
+.text {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	left: 3px;
+	margin: 0px 5px;
+
+}
+
+hr {
+	margin: -10px 5px 5px 5px;
+	opacity: 0.4;
+
+}
+
+.social-network {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: -10px;
+	position: relative;
+	left: 26px;
+	margin: 0px 28px;
+}
+// описание бока,размеры цвет
+.socset {
+	position: relative;
+  	display: inline-block;
+	background: #999999;
+	width: 20px;
+  	height: 20px;
+  	border-radius: 50%;
+}
+// при наведении блок синеет
+ .socset:hover {
+ 	background: #283F95;
+
+ }
+// при наведении на картинку появляется стрелка до(::after) блока socset
+// блогодаря свойству border-color: transparent transparent #000000 transparent;
+ .socset:hover::after {
+	content: '';
+ 	position: absolute; /* Абсолютное позиционирование */
+    width: 0;
+	height: 0;
+
+	border: 10px solid;
+	border-color: transparent transparent #000000 transparent;
+	bottom: -50%;
+	left: 50%;
+	margin-left: -10px;
+}
+// при наведении на картинку появляется текст после(::before) блока socset
+// но в html нужно вставить data-title="мой текст"
+// в тот же блок где класс .socset-ссылка http://htmlbook.ru/blog/vsplyvayushchaya-podskazka-na-css
+.socset:hover::before{
+ 	content: attr(data-title); 
+ 	position: absolute; /* Абсолютное позиционирование */
+    left: -80%; top: 135%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: #000000; /*  цвет фона */
+    color: #fff;
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 12px; /* Размер текста подсказки */
+    text-align: center;
+    width: 120px;
+    padding: 2px 5px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 7%;
+	
+}
+
+
+.center-img {
+	// для центрирования
+	display: block;
+  	margin: 3px auto;
+}
+
+.Share {
+	// color: #000;
+}
+
+// .bord {
+// 	border-bottom: 1px solid #cccccc;
+// }
+@media screen and (max-width: 990px) {
+	.images {
+	    // width: 90%;
+		display: flex;
+		// flex-wrap: wrap;
+		justify-content: center;
+		margin-right: 10px;
+
+	}
+
+}
